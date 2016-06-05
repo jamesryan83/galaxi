@@ -1,0 +1,339 @@
+
+#main-container {
+    overflow-x: hidden;
+    background-color: #010819;
+    position: relative;
+
+
+    // triggers
+
+    .trigger {
+        position: absolute;
+        height: 1px;
+        width: 100%;
+    }
+
+    #trigger1 {
+        top: 0;
+    }
+
+    #trigger2 {
+        top: 300px;
+    }
+
+    #trigger3 {
+        top: 500px;
+    }
+
+    #trigger4 {
+        top: 850px;
+    }
+
+    #trigger5 {
+        top: 1100px;
+    }
+
+    #trigger6 {
+        top: 1800px;
+    }
+
+    #trigger7 {
+        top: 2300px;
+    }
+
+
+
+    // animated items
+
+    .item {
+        position: fixed;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    #mountain {
+        height: 50%;
+        background-size: 100% auto;
+        background-image: url(/res/svg/mountain.svg);
+        bottom: -50%;
+    }
+
+    #moon {
+        width: 200px;
+        height: 200px;
+        left: 200px;
+        top: 200px;
+        background-size: 100% 100%;
+        background-image: url(/res/svg/moon.svg);
+    }
+
+
+    #stars1 {
+        height: 130%;
+        background-size: 100% 100%;
+        background-image: url(/res/svg/stars1.svg);
+    }
+
+
+    #stars2 {
+        height: 130%;
+        background-size: 100% 100%;
+        background-image: url(/res/svg/stars2.svg);
+    }
+
+    #city1 {
+        height: 40%;
+        background-size: 100% auto;
+        background-image: url(/res/svg/city1.svg);
+        bottom: -40%;
+    }
+
+    #city2 {
+        height: 30%;
+        background-size: 100% auto;
+        background-image: url(/res/svg/city2.svg);
+        bottom: -30%;
+    }
+
+
+    #shooting-star {
+        position: fixed;
+        top: -200px;
+        height: 5px;
+        width: 50px;
+        background-repeat: no-repeat;
+        background-image: url(/res/svg/shooting-star.svg);
+        backface-visibility: hidden;
+    }
+
+    #plane {
+        position: fixed;
+        height: 24px;
+        width: 80px;
+        left: -100px;
+        background-repeat: no-repeat;
+        background-image: url(/res/svg/plane.svg);
+        backface-visibility: hidden;
+        bottom: -30%;
+    }
+
+
+
+
+    // Text
+
+    #text-title {
+        margin: 0;
+        position: fixed;
+        color: white;
+        top: 265px;
+        left: 400px;
+        font-size: 3em;
+    }
+
+    #text-floating-1 {
+        position: fixed;
+        color: white;
+        width: 30%;
+        right: 15%;
+        top: 80%;
+        opacity: 0;
+    }
+
+
+
+
+    // Links along top
+    #main-links {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+
+        a {
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+            padding: 0 10px;
+
+            &:visited {
+                color: white;
+            }
+
+            &:hover {
+                text-decoration: overline;
+            }
+        }
+    }
+
+
+
+
+
+
+    // bottom area
+    #some-content-container {
+        background-color: #000d2d;
+
+        #some-content {
+            position: relative;
+
+            // skewed div
+            .content-item {
+                position: absolute;
+                height: 50%;
+                width: 33.33333%;
+                transform: skewY(3deg);
+                background-color: #001038;
+
+                // inner div
+                .content-inner {
+                    height: 100%;
+                    transform: skewY(-3deg);
+
+                    > div {
+                        float: left;
+                    }
+
+                    // image
+                    .content-img {
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: 50% 100%;
+                        height: 100%;
+                        width: 50%;
+                    }
+
+                    // text
+                    .content-text {
+                        height: 100%;
+                        width: 50%;
+                        display: table;
+                        vertical-align: middle;
+                        padding-right: 10px;
+
+                        > p {
+                            display: table-cell;
+                            vertical-align: middle;
+                            color: white;
+                        }
+                    }
+                }
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+
+            // item images
+            #content-item-1 {
+                .content-img {
+                    background-image: url(/res/svg/item-star.svg);
+                }
+
+                &:hover {
+                    background-color: #800080;
+                }
+            }
+
+            #content-item-2 {
+                left: 33.333%;
+
+                .content-img {
+                    background-size: 35% 100%;
+                    background-image: url(/res/svg/item-phone.svg);
+                }
+
+                &:hover {
+                    background-color: #360080;
+                }
+            }
+
+            #content-item-3 {
+                left: 66.666%;
+
+                .content-img {
+                    background-image: url(/res/svg/item-speak.svg);
+                }
+
+                &:hover {
+                    background-color: #005980;
+                }
+            }
+
+            #content-item-4 {
+                top: 50%;
+
+                .content-img {
+                    background-size: 40% 100%;
+                    background-image: url(/res/svg/item-pencil.svg);
+                }
+
+                &:hover {
+                    background-color: #008045;
+                }
+            }
+
+            #content-item-5 {
+                top: 50%;
+                left: 33.333%;
+
+                .content-img {
+                    background-image: url(/res/svg/item-cloud.svg);
+                }
+
+                &:hover {
+                    background-color: #806700;
+                }
+            }
+
+            #content-item-6 {
+                top: 50%;
+                left: 66.666%;
+
+                .content-img {
+                    background-image: url(/res/svg/item-plane.svg);
+                }
+
+                &:hover {
+                    background-color: #802700;
+                }
+            }
+        }
+    }
+
+
+
+
+
+    // Scroll down arrow
+    #scroll-down {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        > div {
+            background-repeat: no-repeat;
+            height: 100px;
+            width: 40px;
+            display: inline-block;
+            background-position: center;
+        }
+
+        #scroll-mouse {
+            background-image: url(/res/svg/scroll-mouse.svg);
+        }
+
+        #scroll-arrow {
+            position: relative;
+            background-image: url(/res/svg/scroll-arrow.svg);
+        }
+    }
+
+
+}
+
+
