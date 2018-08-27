@@ -2,6 +2,25 @@
   font-family: Orator;
   src: url("../res/fonts/OratorStd.otf"); }
 
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Orator, Verdana, Geneva, sans-serif;
+  box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  width: 100%; }
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.clearfix {
+  clear: both; }
+
 #main-container {
   overflow-x: hidden;
   background-color: #010819;
@@ -32,7 +51,7 @@
   #main-container #mountain {
     height: 50%;
     background-size: 100% auto;
-    background-image: url(/res/svg/mountain.svg);
+    background-image: url(../res/svg/mountain.svg);
     bottom: -50%; }
   #main-container #moon {
     width: 200px;
@@ -40,24 +59,24 @@
     left: 200px;
     top: 200px;
     background-size: 100% 100%;
-    background-image: url(/res/svg/moon.svg); }
+    background-image: url(../res/svg/moon.svg); }
   #main-container #stars1 {
     height: 130%;
     background-size: 100% 100%;
-    background-image: url(/res/svg/stars1.svg); }
+    background-image: url(../res/svg/stars1.svg); }
   #main-container #stars2 {
     height: 130%;
     background-size: 100% 100%;
-    background-image: url(/res/svg/stars2.svg); }
+    background-image: url(../res/svg/stars2.svg); }
   #main-container #city1 {
     height: 40%;
     background-size: 100% auto;
-    background-image: url(/res/svg/city1.svg);
+    background-image: url(../res/svg/city1.svg);
     bottom: -40%; }
   #main-container #city2 {
     height: 30%;
     background-size: 100% auto;
-    background-image: url(/res/svg/city2.svg);
+    background-image: url(../res/svg/city2.svg);
     bottom: -30%; }
   #main-container #shooting-star {
     position: fixed;
@@ -65,7 +84,7 @@
     height: 5px;
     width: 50px;
     background-repeat: no-repeat;
-    background-image: url(/res/svg/shooting-star.svg);
+    background-image: url(../res/svg/shooting-star.svg);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden; }
   #main-container #plane {
@@ -74,7 +93,7 @@
     width: 80px;
     left: -100px;
     background-repeat: no-repeat;
-    background-image: url(/res/svg/plane.svg);
+    background-image: url(../res/svg/plane.svg);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     bottom: -30%; }
@@ -113,12 +132,10 @@
         position: absolute;
         height: 50%;
         width: 33.33333%;
-        -webkit-transform: skewY(3deg);
         transform: skewY(3deg);
         background-color: #001038; }
         #main-container #some-content-container #some-content .content-item .content-inner {
           height: 100%;
-          -webkit-transform: skewY(-3deg);
           transform: skewY(-3deg); }
           #main-container #some-content-container #some-content .content-item .content-inner > div {
             float: left; }
@@ -141,41 +158,41 @@
         #main-container #some-content-container #some-content .content-item:hover {
           cursor: pointer; }
       #main-container #some-content-container #some-content #content-item-1 .content-img {
-        background-image: url(/res/svg/item-star.svg); }
+        background-image: url(../res/svg/item-star.svg); }
       #main-container #some-content-container #some-content #content-item-1:hover {
         background-color: #800080; }
       #main-container #some-content-container #some-content #content-item-2 {
         left: 33.333%; }
         #main-container #some-content-container #some-content #content-item-2 .content-img {
           background-size: 35% 100%;
-          background-image: url(/res/svg/item-phone.svg); }
+          background-image: url(../res/svg/item-phone.svg); }
         #main-container #some-content-container #some-content #content-item-2:hover {
           background-color: #360080; }
       #main-container #some-content-container #some-content #content-item-3 {
         left: 66.666%; }
         #main-container #some-content-container #some-content #content-item-3 .content-img {
-          background-image: url(/res/svg/item-speak.svg); }
+          background-image: url(../res/svg/item-speak.svg); }
         #main-container #some-content-container #some-content #content-item-3:hover {
           background-color: #005980; }
       #main-container #some-content-container #some-content #content-item-4 {
         top: 50%; }
         #main-container #some-content-container #some-content #content-item-4 .content-img {
           background-size: 40% 100%;
-          background-image: url(/res/svg/item-pencil.svg); }
+          background-image: url(../res/svg/item-pencil.svg); }
         #main-container #some-content-container #some-content #content-item-4:hover {
           background-color: #008045; }
       #main-container #some-content-container #some-content #content-item-5 {
         top: 50%;
         left: 33.333%; }
         #main-container #some-content-container #some-content #content-item-5 .content-img {
-          background-image: url(/res/svg/item-cloud.svg); }
+          background-image: url(../res/svg/item-cloud.svg); }
         #main-container #some-content-container #some-content #content-item-5:hover {
           background-color: #806700; }
       #main-container #some-content-container #some-content #content-item-6 {
         top: 50%;
         left: 66.666%; }
         #main-container #some-content-container #some-content #content-item-6 .content-img {
-          background-image: url(/res/svg/item-plane.svg); }
+          background-image: url(../res/svg/item-plane.svg); }
         #main-container #some-content-container #some-content #content-item-6:hover {
           background-color: #802700; }
   #main-container #scroll-down {
@@ -183,7 +200,6 @@
     height: 100px;
     width: 100px;
     left: 50%;
-    -webkit-transform: translateX(-50%);
     transform: translateX(-50%); }
     #main-container #scroll-down > div {
       background-repeat: no-repeat;
@@ -192,27 +208,7 @@
       display: inline-block;
       background-position: center; }
     #main-container #scroll-down #scroll-mouse {
-      background-image: url(/res/svg/scroll-mouse.svg); }
+      background-image: url(../res/svg/scroll-mouse.svg); }
     #main-container #scroll-down #scroll-arrow {
       position: relative;
-      background-image: url(/res/svg/scroll-arrow.svg); }
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: Orator, Verdana, Geneva, sans-serif;
-  box-sizing: border-box; }
-
-html, body {
-  height: 100%;
-  width: 100%; }
-
-.center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
-
-.clearfix {
-  clear: both; }
+      background-image: url(../res/svg/scroll-arrow.svg); }
